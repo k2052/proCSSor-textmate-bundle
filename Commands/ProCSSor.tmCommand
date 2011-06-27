@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'rest_client' 
+require 'json'
+
+result = RestClient.post "http://procssor.com/api", :source =&gt; :direct, :css =&gt; ENV['TM_SELECTED_TEXT'], :braces =&gt; :pico,
+:alignment =&gt; :right, :property_formatting =&gt; :same_line, :tabbing =&gt; true, :selectors_on_same_line =&gt; true 
+puts JSON.parse(result)['css']</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>~Q</string>
+	<key>name</key>
+	<string>ProCSSor</string>
+	<key>output</key>
+	<string>replaceSelectedText</string>
+	<key>uuid</key>
+	<string>FD0F1F08-2A20-4011-8982-EEDD4954846F</string>
+</dict>
+</plist>

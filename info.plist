@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>ProCSSor</string>
+	<key>ordering</key>
+	<array>
+		<string>FD0F1F08-2A20-4011-8982-EEDD4954846F</string>
+	</array>
+	<key>uuid</key>
+	<string>EC871D83-B4A0-4754-A18E-FB51CC81603C</string>
+</dict>
+</plist>
